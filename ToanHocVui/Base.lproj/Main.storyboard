@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qPz-H0-jYN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Cá nhân-->
+        <scene sceneID="IV9-d2-cUp">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="HRS-JJ-Thn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jeq-CG-Iyv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qMJ-TE-mma"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Cá nhân" image="ic_male" id="RdI-yI-8oP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EHY-pd-eDi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280" y="451"/>
+        </scene>
+        <!--Khoá học-->
+        <scene sceneID="CzJ-GE-Jxb">
+            <objects>
+                <viewController id="1Ve-uP-jPy" customClass="ViewController" customModule="ToanHocVui" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aWQ-q3-zh6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toán học vui" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXn-2u-W1e">
+                                <rect key="frame" x="30" y="64" width="354" height="37"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UT8-wk-a6G">
+                                <rect key="frame" x="0.0" y="111" width="414" height="702"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jXn-2u-W1e" firstAttribute="leading" secondItem="E3K-82-mBN" secondAttribute="leading" constant="30" id="0kP-Ns-pXO"/>
+                            <constraint firstItem="E3K-82-mBN" firstAttribute="trailing" secondItem="jXn-2u-W1e" secondAttribute="trailing" constant="30" id="7of-R3-t1X"/>
+                            <constraint firstItem="UT8-wk-a6G" firstAttribute="top" secondItem="jXn-2u-W1e" secondAttribute="bottom" constant="10" id="KOt-vh-2Rr"/>
+                            <constraint firstItem="jXn-2u-W1e" firstAttribute="top" secondItem="E3K-82-mBN" secondAttribute="top" constant="20" id="q9L-Ye-LUq"/>
+                            <constraint firstItem="E3K-82-mBN" firstAttribute="bottom" secondItem="UT8-wk-a6G" secondAttribute="bottom" id="sJY-cK-lmX"/>
+                            <constraint firstItem="UT8-wk-a6G" firstAttribute="leading" secondItem="E3K-82-mBN" secondAttribute="leading" id="xQB-Mt-H69"/>
+                            <constraint firstItem="E3K-82-mBN" firstAttribute="trailing" secondItem="UT8-wk-a6G" secondAttribute="trailing" id="xjn-gY-lWW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E3K-82-mBN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Khoá học" image="ic_study" id="xzv-xf-qM2"/>
+                    <connections>
+                        <outlet property="tableView" destination="UT8-wk-a6G" id="dtk-7o-idA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s5Q-eG-wky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279.71014492753625" y="-197.54464285714286"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sMQ-av-tnj">
+            <objects>
+                <tabBarController id="qPz-H0-jYN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="leU-ui-On9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1Ve-uP-jPy" kind="relationship" relationship="viewControllers" id="jeV-iM-RdE"/>
+                        <segue destination="HRS-JJ-Thn" kind="relationship" relationship="viewControllers" id="0dM-DP-aU4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDy-UH-tLr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639" y="127"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_male" width="25" height="25"/>
+        <image name="ic_study" width="25" height="25"/>
+    </resources>
 </document>
