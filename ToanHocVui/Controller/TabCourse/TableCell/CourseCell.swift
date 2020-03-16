@@ -9,7 +9,13 @@
 import UIKit
 
 class CourseCell: UITableViewCell {
-
+    
+    @IBOutlet weak var viewCell: UIView!
+    @IBOutlet weak var imgBackground: UIImageView!
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblSubtitle: UILabel!
+    @IBOutlet weak var btnStart: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
