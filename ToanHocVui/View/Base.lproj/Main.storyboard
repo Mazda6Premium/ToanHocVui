@@ -32,13 +32,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toán học vui" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXn-2u-W1e">
-                                <rect key="frame" x="30" y="64" width="354" height="37"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="26"/>
+                                <rect key="frame" x="30" y="69" width="354" height="26"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UT8-wk-a6G">
-                                <rect key="frame" x="0.0" y="111" width="414" height="702"/>
+                                <rect key="frame" x="0.0" y="105" width="414" height="708"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -47,7 +47,7 @@
                             <constraint firstItem="jXn-2u-W1e" firstAttribute="leading" secondItem="E3K-82-mBN" secondAttribute="leading" constant="30" id="0kP-Ns-pXO"/>
                             <constraint firstItem="E3K-82-mBN" firstAttribute="trailing" secondItem="jXn-2u-W1e" secondAttribute="trailing" constant="30" id="7of-R3-t1X"/>
                             <constraint firstItem="UT8-wk-a6G" firstAttribute="top" secondItem="jXn-2u-W1e" secondAttribute="bottom" constant="10" id="KOt-vh-2Rr"/>
-                            <constraint firstItem="jXn-2u-W1e" firstAttribute="top" secondItem="E3K-82-mBN" secondAttribute="top" constant="20" id="q9L-Ye-LUq"/>
+                            <constraint firstItem="jXn-2u-W1e" firstAttribute="top" secondItem="E3K-82-mBN" secondAttribute="top" constant="25" id="q9L-Ye-LUq"/>
                             <constraint firstItem="E3K-82-mBN" firstAttribute="bottom" secondItem="UT8-wk-a6G" secondAttribute="bottom" id="sJY-cK-lmX"/>
                             <constraint firstItem="UT8-wk-a6G" firstAttribute="leading" secondItem="E3K-82-mBN" secondAttribute="leading" id="xQB-Mt-H69"/>
                             <constraint firstItem="E3K-82-mBN" firstAttribute="trailing" secondItem="UT8-wk-a6G" secondAttribute="trailing" id="xjn-gY-lWW"/>
